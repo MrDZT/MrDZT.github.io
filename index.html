@@ -1,4 +1,4 @@
-<bgsound src="AWOLNATION - I Am (就是我).mp3" autostart=true loop=infinite>
+
 <head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -10,6 +10,72 @@
 		<link rel="shortcut icon" href="https://raw.githubusercontent.com/MrDZT/MrDZT.github.io/main/20220412124611967.ico">
 </head>
 <body background="bj.jpg">
+<script>
+//if ((!navigator.userAgent.match(/(iPhone|iPod|Android|ios|iPad)/i))) {//匹配手机，把注释去掉就只显示PC端
+    $('body').before('<div id="fps" style="color:#7FFFD4;z-index:10000;position:fixed;top:2px;left:2px;font-weight:bold;"></div>');
+    var showFPS = (function() {
+        var requestAnimationFrame = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame || function(callback) {
+            window.setTimeout(callback, 1000 / 60);
+        }
+        ;
+        var e, pe, pid, fps, last, offset, step, appendFps;
+        fps = 0;
+        last = Date.now();
+        step = function() {
+            offset = Date.now() - last;
+            fps += 1;
+            if (offset >= 1000) {
+                last += offset;
+                appendFps(fps);
+                fps = 0;
+            }
+            requestAnimationFrame(step);
+        }
+        ;
+        appendFps = function(fps) {
+            $('#fps').html(fps + 'FPS');
+        }
+        ;
+        step();
+    }
+    )();
+//}//手机和电脑开启
+</script>
+<script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+<script>
+    L2Dwidget.init({
+        "model": {
+/*
+黑猫：https://unpkg.com/live2d-widget-model-hijiki@1.0.5/assets/hijiki.model.json
+萌娘：https://unpkg.com/live2d-widget-model-shizuku@1.0.5/assets/shizuku.model.json
+白猫：https://unpkg.com/live2d-widget-model-tororo@1.0.5/assets/tororo.model.json
+狗狗：https://unpkg.com/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json
+小可爱：https://unpkg.com/live2d-widget-model-z16@1.0.5/assets/z16.model.json
+小可爱：https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json
+*/
+　　　　　　　//jsonpath控制显示那个小萝莉模型，
+			//(切换模型需要改动)
+//				"https://unpkg.com/(live2d-widget-model-koharu)@1.0.5/assets/(koharu).model.json"
+            jsonPath: "https://unpkg.com/live2d-widget-model-hijiki@1.0.5/assets/hijiki.model.json",
+            "scale": 1
+        },
+        "display": {
+            "position": "right", //看板娘的表现位置
+            "width": 60,  //宽度
+            "height": 110, //高度
+            "hOffset": -30,
+            "vOffset": -50
+        },
+        "mobile": {
+            "show": true,
+            "scale": 0.5
+        },
+        "react": {
+            "opacityDefault": 0.7,
+            "opacityOnHover": 0.2
+        }
+    });
+</script>
 <p>                        Hello 大家好</p>
 <p>                 我是MrDZT，这是我的个人网站。 </p>
 <p>             既然来了这个网站，就看看我的B站账号吧 XD</p>
