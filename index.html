@@ -21,7 +21,7 @@
 
 <!-- 显示FPS开始 -->
 <script>
-//if ((!navigator.userAgent.match(/(iPhone|iPod|Android|ios|iPad)/i))) {//匹配手机，把注释去掉就只显示PC端
+//if ((!navigator.userAgent.match(/(iPhone|iPod|Android|ios|iPad)/i)))
     $('body').before('<div id="fps" style="color:#7FFFD4;z-index:10000;position:fixed;top:2px;left:2px;font-weight:bold;"></div>');
     var showFPS = (function() {
         var requestAnimationFrame = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame || function(callback) {
@@ -49,7 +49,6 @@
         step();
     }
     )();
-//}//手机和电脑开启
 </script>
 <!-- 显示FPS结束 -->
 
@@ -58,24 +57,13 @@
 <script>
     L2Dwidget.init({
         "model": {
-/*
-黑猫：https://unpkg.com/live2d-widget-model-hijiki@1.0.5/assets/hijiki.model.json
-萌娘：https://unpkg.com/live2d-widget-model-shizuku@1.0.5/assets/shizuku.model.json
-白猫：https://unpkg.com/live2d-widget-model-tororo@1.0.5/assets/tororo.model.json
-狗狗：https://unpkg.com/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json
-小可爱：https://unpkg.com/live2d-widget-model-z16@1.0.5/assets/z16.model.json
-小可爱：https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json
-*/
-　　　　　　　//jsonpath控制显示那个小萝莉模型，
-			//(切换模型需要改动)
-//				"https://unpkg.com/(live2d-widget-model-koharu)@1.0.5/assets/(koharu).model.json"
             jsonPath: "https://unpkg.com/live2d-widget-model-hijiki@1.0.5/assets/hijiki.model.json",
             "scale": 1
         },
         "display": {
-            "position": "right", //看板娘的表现位置
-            "width": 60,  //宽度
-            "height": 110, //高度
+            "position": "right",
+            "width": 60,
+            "height": 110,
             "hOffset": -30,
             "vOffset": -50
         },
