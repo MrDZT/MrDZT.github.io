@@ -1,3 +1,6 @@
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -9,8 +12,13 @@
 		<link rel="shortcut icon" href="https://raw.githubusercontent.com/MrDZT/MrDZT.github.io/main/20220412124611967.ico">
 </head>
 
-<bgsound="http://freetyst.nf.migu.cn/public/product9th/product45/2021/11/0419/2021%E5%B9%B410%E6%9C%8803%E6%97%A507%E7%82%B923%E5%88%86%E5%86%85%E5%AE%B9%E5%87%86%E5%85%A5%E5%8D%8E%E7%BA%B322%E9%A6%96721265/%E6%A0%87%E6%B8%85%E9%AB%98%E6%B8%85/MP3_320_16_Stero/6005752ST4Z190107.mp3" loop=infinite>
+<body style="height: 100%px;">
+	<div class="back-to-top cd-top faa-float animated cd-is-visible" style="top: -900px;"></div>
+	<script src="https://qncdn.wanshifu.com/wshifu-user/js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/szgotop.js"></script>
+</body>
 
+<!-- 文字 -->
 <style>
 h1 {text-align:center}
 h3 {text-align:center}
@@ -27,12 +35,14 @@ h4 {text-align:center}
 <h3>下面是我的B站账号</h3>
 <h3>快快点进去给我一个关注吧 XD</h3>
 <h3>锁定我哦！！！lol</h3>
-<body
-	
+</body>
+
 <ul>
-  <h4> <li> <a href="https://space.bilibili.com/437772906?spm_id_from=333.1007.0.0">DZT的B站账号</a> </li> </h4>
-  <h4> <li> <a href="https://www.bilibili.com/video/BV1Va41147hK?spm_id_from=333.999.0.0">我的新活，支持一下啦</a> </li> </h4>
+  <h4> <a href="https://space.bilibili.com/437772906?spm_id_from=333.1007.0.0">DZT的B站账号</a> </h4>
+  <h4> <a href="https://www.bilibili.com/video/BV1Va41147hK?spm_id_from=333.999.0.0">我的新活，支持一下啦</a> </h4>
 </ul>
+<!-- 文字 -->
+
 
 <!-- 各类代码开始 -->
 <div>
@@ -45,7 +55,7 @@ h4 {text-align:center}
     var now = new Date();
     var ile = now.getTime() - urodz.getTime();
     var dni = Math.floor(ile / (1000 * 60 * 60 * 24));
-    document.write("DZT的个人小站已运行"+dni+"天");
+    document.write("DZT的小站已运行"+dni+"天");
 </script>
 <br>
 
@@ -97,6 +107,77 @@ h4 {text-align:center}
   </div>
    </div>
 </div>
-<!-- 各类代码结束 -->
+
+<!-- 显示FPS开始 -->
+<script>
+//if ((!navigator.userAgent.match(/(iPhone|iPod|Android|ios|iPad)/i))) {//匹配手机，把注释去掉就只显示PC端
+    $('body').before('<div id="fps" style="color:#FF6666;z-index:10000;position:fixed;top:2px;left:2px;font-weight:bold;"></div>');
+    var showFPS = (function() {
+        var requestAnimationFrame = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame || function(callback) {
+            window.setTimeout(callback, 1000 / 60);
+        }
+        ;
+        var e, pe, pid, fps, last, offset, step, appendFps;
+        fps = 0;
+        last = Date.now();
+        step = function() {
+            offset = Date.now() - last;
+            fps += 1;
+            if (offset >= 1000) {
+                last += offset;
+                appendFps(fps);
+                fps = 0;
+            }
+            requestAnimationFrame(step);
+        }
+        ;
+        appendFps = function(fps) {
+            $('#fps').html(fps + 'FPS');
+        }
+        ;
+        step();
+    }
+    )();
+//}//手机和电脑开启
+</script>
+<!-- 显示FPS结束 -->
 
 
+
+<!-- 猫咪开始 -->
+<script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+<script>
+    L2Dwidget.init({
+        "model": {
+/*
+黑猫：https://unpkg.com/live2d-widget-model-hijiki@1.0.5/assets/hijiki.model.json
+萌娘：https://unpkg.com/live2d-widget-model-shizuku@1.0.5/assets/shizuku.model.json
+白猫：https://unpkg.com/live2d-widget-model-tororo@1.0.5/assets/tororo.model.json
+狗狗：https://unpkg.com/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json
+小可爱：https://unpkg.com/live2d-widget-model-z16@1.0.5/assets/z16.model.json
+小可爱：https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json
+*/
+　　　　　　　//jsonpath控制显示那个小萝莉模型，
+			//(切换模型需要改动)
+//				"https://unpkg.com/(live2d-widget-model-koharu)@1.0.5/assets/(koharu).model.json"
+            jsonPath: "https://unpkg.com/live2d-widget-model-shizuku@1.0.5/assets/shizuku.model.json",
+            "scale": 1
+        },
+        "display": {
+            "position": "right", //看板娘的表现位置
+            "width": 60,  //宽度
+            "height": 110, //高度
+            "hOffset": -30,
+            "vOffset": -50
+        },
+        "mobile": {
+            "show": true,
+            "scale": 0.5
+        },
+        "react": {
+            "opacityDefault": 0.7,
+            "opacityOnHover": 0.2
+        }
+    });
+</script>
+<!-- 猫咪结束 -->
