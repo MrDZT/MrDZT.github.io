@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,7 +17,34 @@
 	<script type="text/javascript" src="js/szgotop.js"></script>
 </body>
 
-<!-- 文字 -->
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>bootstrap的学习</title>
+		<!--导入基本样式-->
+		<link style="text/css" rel="stylesheet" href="css/bootstrap.css">  
+		<!--导入基本样式的压缩-->
+		<link style="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+		<!--导入主题样式  注意：顺序 不可变-->
+		<link style="text/css" rel="stylesheet" href="css/bootstrap-theme.css">
+	</head>
+	<body>
+		<!--类nav清除列表的默认样式  nav-tabs定义tabs的标题栏-->
+			<ul class="nav nav-tabs">
+				<li><a href="https://mrdzt.github.io/" data-toggle=tab">首页</a></li>
+				<li><a href="#tab2" data-toggle=tab">关注</a></li>
+				<li><a href="#tab2" data-toggle=tab">个人中心</a></li>
+			</ul>
+ 
+	</body>
+</html>
+
+<body>
+<h1>朋友，你好呀！</h1>
+<h3>我是DZT，这是我的个人小站</h3>
+<h3>下面是我的B站账号</h3>
+<h3>快快点进去给我一个关注吧 XD</h3>
+<h3>锁定我哦！！！lol</h3>
 <style>
 h1 {text-align:center}
 h3 {text-align:center}
@@ -28,13 +54,6 @@ h3 {text-align:center}
 h4 {text-align:center}
 h4 {text-align:center}
 </style>
-
-<body>
-<h1>朋友，你好呀！</h1>
-<h3>我是DZT，这是我的个人小站</h3>
-<h3>下面是我的B站账号</h3>
-<h3>快快点进去给我一个关注吧 XD</h3>
-<h3>锁定我哦！！！lol</h3>
 </body>
 
 <ul>
@@ -111,7 +130,7 @@ h4 {text-align:center}
 <!-- 显示FPS开始 -->
 <script>
 //if ((!navigator.userAgent.match(/(iPhone|iPod|Android|ios|iPad)/i))) {//匹配手机，把注释去掉就只显示PC端
-    $('body').before('<div id="fps" style="color:#FF6666;z-index:10000;position:fixed;top:2px;left:2px;font-weight:bold;"></div>');
+    $('body').before('<div id="fps" style="color:#7FFFD4;z-index:10000;position:fixed;top:2px;left:2px;font-weight:bold;"></div>');
     var showFPS = (function() {
         var requestAnimationFrame = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame || function(callback) {
             window.setTimeout(callback, 1000 / 60);
