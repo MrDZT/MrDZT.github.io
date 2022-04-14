@@ -1,72 +1,358 @@
+<!-- 
+______      _________     ___________
+|     \             /          |
+|      \           /           |
+|       |         /            |
+|       |        /             |
+|      /        /              |
+|_____/     ___/_____          |
 
+---DZT保佑————github永不被墙，代码永不出错，ico用不加载不出！
+---借鉴了一点csdn的源码
+---DM你就是歌姬吧，又来看我源码【doge】
+
+-->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<title>MrDZT的个人小站</title>
-		<meta name="keywords" content="MrDZT,个人小站,学习群DZT的小站">
-		<meta name="description" content="DZT的小站啊，里面有好东西哦。">
-		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<link rel="shortcut icon" href="https://raw.githubusercontent.com/MrDZT/MrDZT.github.io/main/20220412124611967.ico">
-</head>
+<meta charset="UTF-8">
+<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<title itemprop="name">MrDZT的个人小站</title>
+<link rel="shortcut icon" href="/wp-content/uploads/2019/05/favicon.ico"/> 
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//cdn.jsdelivr.net' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://www.baymin.online/wp-includes/css/dist/block-library/style.min.css?ver=5.7.6' type='text/css' media='all' />
+<link rel='stylesheet' id='saukra_css-css'  href='https://cdn.jsdelivr.net/gh/mashirozx/Sakura@3.1.8/style.min.css?ver=3.1.8' type='text/css' media='all' />
+<link rel="https://api.w.org/" href="https://www.baymin.online/wp-json/" /><!-- Analytics by WP-Statistics v13.0.8 - https://wp-statistics.com/ -->
+<style type="text/css">
+.site-top .lower nav {display: block !important;}
+.author-profile i , .post-like a , .post-share .show-share , .sub-text , .we-info a , span.sitename , .post-more i:hover , #pagination a:hover , .post-content a:hover , .float-content i:hover{ color: #FE9600 }
+.feature i , /*.feature-title span ,*/ .download , .navigator i:hover , .links ul li:before , .ar-time i , span.ar-circle , .object , .comment .comment-reply-link , .siren-checkbox-radio:checked + .siren-checkbox-radioInput:after { background: #FE9600 }
+::-webkit-scrollbar-thumb { background: #FE9600 }
+.download , .navigator i:hover , .link-title , .links ul li:hover , #pagination a:hover , .comment-respond input[type='submit']:hover { border-color: #FE9600 }
+.entry-content a:hover , .site-info a:hover , .comment h4 a , #comments-navi a.prev , #comments-navi a.next , .comment h4 a:hover , .site-top ul li a:hover , .entry-title a:hover , #archives-temp h3 , span.page-numbers.current , .sorry li a:hover , .site-title a:hover , i.iconfont.js-toggle-search.iconsearch:hover , .comment-respond input[type='submit']:hover, blockquote:before, blockquote:after { color: #FE9600 }
 
-<body style="height: 100%px;">
-	<div class="back-to-top cd-top faa-float animated cd-is-visible" style="top: -900px;"></div>
-	<script src="https://qncdn.wanshifu.com/wshifu-user/js/jquery-3.2.1.min.js"></script>
-	<script type="text/javascript" src="js/szgotop.js"></script>
-</body>
+#aplayer-float .aplayer-lrc-current { color: #FE9600 !important}
 
-<html>
-	<head>
-		<meta charset="utf-8" />
-		<title>bootstrap的学习</title>
-		<!--导入基本样式-->
-		<link style="text/css" rel="stylesheet" href="css/bootstrap.css">  
-		<!--导入基本样式的压缩-->
-		<link style="text/css" rel="stylesheet" href="css/bootstrap.min.css">
-		<!--导入主题样式  注意：顺序 不可变-->
-		<link style="text/css" rel="stylesheet" href="css/bootstrap-theme.css">
-	</head>
-	<body>
-		<!--类nav清除列表的默认样式  nav-tabs定义tabs的标题栏-->
-			<ul class="nav nav-tabs">
-				<li><img src="https://i.ibb.co/0BC0cXz/bt.jpg"></li>
-				<li><a href="https://mrdzt.github.io/" data-toggle=tab">首页</a></li>
-				<li><a href="#tab2" data-toggle=tab">关注</a></li>
-				<li><a href="#tab2" data-toggle=tab">个人中心</a></li>
-				<li><a href="https://mrdzt.github.io/bilibilivip/" data-toggle=tab">B站大会员兑换</a></li>
-			</ul>
- 
-	</body>
-</html>
+.is-active-link::before {
+    background-color: #FE9600 !important
+}
 
-<body>
-<h1>朋友，你好呀！</h1>
-<h3>我是DZT，这是我的个人小站</h3>
-<h3>下面是我的B站账号</h3>
-<h3>快快点进去给我一个关注吧 XD</h3>
-<h3>锁定我哦！！！lol</h3>
-<style>
-h1 {text-align:center}
-h3 {text-align:center}
-h3 {text-align:center}
-h3 {text-align:center}
-h3 {text-align:center}
-h4 {text-align:center}
-h4 {text-align:center}
+.insert-image-tips:hover, .insert-image-tips-hover{ 
+    color: #FE9600;
+    border: 1px solid #FE9600}
+
+.site-top ul li a:after {
+    background-color: #FE9600}
+
+.scrollbar,.butterBar-message {
+    background: #FE9600 !important
+}
+
+#nprogress .spinner-icon{ 
+    border-top-color: #FE9600; 
+    border-left-color: #FE9600}
+
+#nprogress .bar {
+    background: #FE9600}
+
+.entry-content th {
+    background-color: #FE9600}
+
+.centerbg{background-image: url("https://tva1.sinaimg.cn/large/0072Vf1pgy1foxkjgev08j31hc0u0qgl.jpg");background-position: center center;background-attachment: inherit;}
+.rotating {
+    -webkit-animation: rotating 6s linear infinite;
+    -moz-animation: rotating 6s linear infinite;
+    -ms-animation: rotating 6s linear infinite;
+    -o-animation: rotating 6s linear infinite;
+    animation: rotating 6s linear infinite;
+}
 </style>
+<script>
+var mashiro_option = new Object();
+var mashiro_global = new Object();
+mashiro_option.NProgressON = false;
+mashiro_option.email_domain = "qq.com";
+mashiro_option.email_name = "1659263717";
+mashiro_option.cookie_version_control = "";
+mashiro_option.qzone_autocomplete = false;
+mashiro_option.site_name = "MrDZT的个人小站";
+mashiro_option.author_name = "MrDZT";
+mashiro_option.template_url = "https://www.baymin.online/wp-content/themes/Sakura";
+mashiro_option.site_url = "https://www.baymin.online";
+mashiro_option.qq_api_url = "https://api.2heng.xin/qqinfo/"; 
+mashiro_option.qq_avatar_api_url = "https://api.2heng.xin/qqinfo/";
+
+mashiro_option.land_at_home = true;
+
+mashiro_option.baguetteBoxON = false;
+
+mashiro_option.clipboardCopyright = true;
+
+mashiro_option.entry_content_theme_src = "https://www.baymin.online/wp-content/themes/Sakura/cdn/theme/sakura.css?3.1.8";
+
+mashiro_option.jsdelivr_css_src = "https://cdn.jsdelivr.net/gh/mashirozx/Sakura@3.1.8/cdn/css/lib.min.css";
+mashiro_option.float_player_on = true;
+
+mashiro_option.cover_api = "/wp-content/uploads/2019/05/background_1.png";
+
+/*End of Initial Variables*/
+if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
+  alert('吃！你怎么还在用IE浏览器，不兼容的哈哈哈哈');
+}
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139607175-1"></script>
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','UA-139607175-1');
+</script>
+</head>
+<body class="home blog hfeed chinese-font">
+    <div class="scrollbar" id="bar"></div>
+	<section id="main-container">
+				<div class="headertop filter-dot">
+			<figure id="centerbg" class="centerbg">
+	<div class="focusinfo">
+                <h1 class="center-text glitch is-glitching Ubuntu-font" data-text="Mr.DZT">Mr.DZT</h1>
+   				<div class="header-info">
+            <p>如果你简单，这个世界就对你简单</p>
+			<p>If you are simple, the world is simple for you</p>
+                    </div>
+        		<div class="top-social">
+		<li id="bg-pre"><img class="flipx" src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/next-b.svg"/></li>
+				<li><a href="https://github.com/MrDZT/" target="_blank" class="social-github" title="github"><img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/github.png"/></a></li>
+			
+					
+				<li class="qq"><a href="tencent://message/?uin=738707401" title="Initiate chat ?"><img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/qq.png"/></a></li>
+			
+				 
+			
+				<li><a href="https://space.bilibili.com/437772906" target="_blank" class="social-bili" title="bilibili"><img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/bilibili.png"/></a></li>
+										<li><a href="https://twitter.com/MrDZT" target="_blank" class="social-wangyiyun" title="Twitter"><img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/twitter.png"/></a></li>
+			
+			
+							
+				
+				<li><a onclick="mail_me()" class="social-wangyiyun" title="E-mail"><img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/email.svg"/></a></li>
+			
+		<li id="bg-next"><img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/next-b.svg"/></li>	
+	  	</div>
+        	</div>
+	</figure>
+<div id="video-container" style="display:none;"><video id="bgvideo" class="video" video-name="" src="" width="auto" preload="auto"></video><div id="video-btn" class="loadvideo videolive"></div><div id="video-add"></div><div class="video-stu"></div></div>		</div>	
+				<div id="page" class="site wrapper">
+			<header class="site-header no-select" role="banner">
+				<div class="site-top">
+					<div class="site-branding">
+												<span class="site-title">
+							<span class="logolink serif">
+								<a href="https://www.baymin.online">
+									<span class="site-name">MrDZT的小破站</span>
+								</a>
+							</span>
+						</span>	
+						<!-- logo end -->
+					</div><!-- .site-branding -->
+					  <div class="header-user-avatar">
+    <a href="https://space.bilibili.com/437772906">
+      <img class="faa-shake animated-hover" src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/none.png" width="30" height="30">
+    </a>
+    <div class="header-user-menu">
+      <div class="herder-user-name no-logged">要去我的<a href="https://space.bilibili.com/437772906" target="_blank" style="color:#333;font-weight:bold;text-decoration:none">B站主页</a>看看嘛？
+      </div>
+    </div>
+  </div>
+  					<div class="searchbox"><i class="iconfont js-toggle-search iconsearch icon-search"></i></div>
+										<div class="lower">						<nav><ul id="menu-head" class="menu"><li class="current-menu-item"><a href="https://mrdzt.github.io/" aria-current="page"><i class="fa fa-home"> </i> 首页</a></li>
+</ul></nav><!-- #site-navigation -->
+					</div>	
+				</div>
+			</header><!-- #masthead -->
+			<div class="blank"></div>		    <div id="content" class="site-content">   
+   	
+		
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">	
+		<h1 class="main-title" style="font-family: 'Ubuntu', sans-serif;"><i class="fa fa-envira" aria-hidden="true"></i> 我的视频</h1>
+			<article class="post post-list-thumb " itemscope="" itemtype="http://schema.org/BlogPosting">
+		<div class="post-thumb">
+			<a href="https://www.bilibili.com/video/BV1Va41147hK"><img class="lazyload" src="https://i1.hdslb.com/bfs/archive/6be2b70fd0a08ef504ce4ed25d5487e53b20c814.jpg" data-src=""></a>
+		</div><!-- thumbnail-->
+		<div class="post-content-wrap">
+			<div class="post-content">
+				<div class="post-date">
+					<i class="iconfont icon-time"></i>发布于 2022-04-02									</div>
+				<a href="https://www.bilibili.com/video/BV1Va41147hK" class="post-title"><h3>白嫖wallpaper engine，进群就可以直接下载！！</h3></a>
+				<div class="post-meta">
+					<span><i class="iconfont icon-attention"></i>652</span>
+					<span class="comments-number"><i class="iconfont icon-mark"></i><a href="https://www.bilibili.com/video/BV1Va41147hK">22</a></span>
+					</span>
+				</div>
+				<div class="float-content">
+					<p>进群呀，以后会有更多白嫖资源哦</p>					<div class="post-bottom">
+						<a href="https://www.bilibili.com/video/BV1Va41147hK" class="button-normal"><i class="iconfont icon-caidan"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</article>
+				</main><!-- #main -->
+				<div id="pagination"></div>
+			</div><!-- #primary -->
+	</div><!-- #content -->
+		</div><!-- #page Pjax container-->
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="site-info" theme-info="Sakura v3.1.8">
+			<div class="footertext">
+				<div class="img-preload">
+					<img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/wordpress-rotating-ball-o.svg">
+					<img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/disqus-preloader.svg">
+				</div>
+		</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+	<div class="openNav no-select">
+		<div class="iconflat no-select">	 
+			<div class="icon"></div>
+		</div>
+		<div class="site-branding">
+						<h1 class="site-title"><a href="https://mrdzt.github.io/" >MrDZT的小破站</a></h1>
+					</div>
+	</div><!-- m-nav-bar -->
+	</section><!-- #section -->
+	<!-- m-nav-center -->
+	<div id="mo-nav">
+		<div class="m-avatar">
+						<img src="https://i0.hdslb.com/bfs/face/91eb83ce76e5e887156710113edf54d1b5183d77.jpg">
+		</div>
+		<div class="m-search">
+			<form class="m-search-form" method="get" action="https://mrdzt.github.io/" role="search">
+				<input class="m-search-input" type="search" name="s" placeholder="搜索..." required>
+			</form>
+		</div>
+		<ul id="menu-head-1" class="menu"><li class="current-menu-item"><a href="https://mrdzt.github.io/" aria-current="page"><i class="fa fa-home"> </i> 首页</a></li>
+</ul>	</div><!-- m-nav-center end -->
+	<a href="#" class="cd-top faa-float animated "></a>
+	<button onclick="topFunction()" id="moblieGoTop" title="Go to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+	<!-- search start -->
+	<form class="js-search search-form search-form--modal" method="get" action="https://search.bilibili.com/all" role="search">
+		<div class="search-form__inner">
+			<div>
+				<p class="micro mb-">想要找点什么呢？</p>
+				<i class="iconfont icon-search"></i>
+				<input class="text-input" type="search" name="keyword" placeholder="Search" required>
+			</div>
+		</div>
+		<div class="search_close"></div>
+	</form>
+	<!-- search end -->
+<script type='text/javascript' src='https://cdn.jsdelivr.net/wp/wp-editormd/tags/10.2.1/assets/jQuery/jquery.min.js?ver=1.12.4' id='jQuery-CDN-js'></script>
+<script type='text/javascript' id='Front_Style-js-extra'>
+/* <![CDATA[ */
+var FrontStyle = {"openLinkInNewTab":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://cdn.jsdelivr.net/wp/wp-editormd/tags/10.2.1/assets/FrontStyle/frontstyle.min.js?ver=10.2.1' id='Front_Style-js'></script>
+<script type='text/javascript' src='https://cdn.jsdelivr.net/gh/mashirozx/Sakura@3.1.8/cdn/js/lib.min.js?ver=3.1.8' id='js_lib-js'></script>
+<script type='text/javascript' id='app-js-extra'>
+/* <![CDATA[ */
+var Poi = {"pjax":"1","movies":"close","windowheight":"auto","codelamp":"close","ajaxurl":"https:\/\/www.baymin.online\/wp-admin\/admin-ajax.php","order":"asc","formpostion":"bottom","reply_link_version":"new"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://cdn.jsdelivr.net/gh/mashirozx/Sakura@3.1.8/js/sakura-app.min.js?ver=3.1.8' id='app-js'></script>
+<div class="changeSkin-gear no-select">
+    <div class="keys">
+        <span id="open-skinMenu">
+		<i class="iconfont icon-gear inline-block rotating"></i>&nbsp; 切换主题 | SCHEME TOOL 
+        </span>
+    </div>
+</div>
+<div class="skin-menu no-select">
+    <div class="theme-controls row-container">
+        <ul class="menu-list">
+            <li id="white-bg">
+                <i class="fa fa-television" aria-hidden="true"></i>
+            </li><!--Default-->
+            <li id="sakura-bg">
+                <i class="iconfont icon-sakura"></i>
+            </li><!--Sakura-->
+            <li id="gribs-bg">
+                <i class="fa fa-slack" aria-hidden="true"></i>
+            </li><!--Grids-->
+            <li id="KAdots-bg">
+                <i class="iconfont icon-dots"></i>
+            </li><!--Dots-->
+            <li id="totem-bg">
+                <i class="fa fa-superpowers" aria-hidden="true"></i>
+            </li><!--Orange-->
+            <li id="pixiv-bg">
+                <i class="iconfont icon-pixiv"></i>
+            </li><!--Start-->
+            <li id="bing-bg">
+                <i class="iconfont icon-bing"></i>
+            </li><!--Bing-->
+            <li id="dark-bg">
+                <i class="fa fa-moon-o" aria-hidden="true"></i>
+            </li><!--Night-->
+        </ul>
+    </div>
+    <div class="font-family-controls row-container">
+        <button type="button" class="control-btn-serif selected" data-mode="serif" 
+                onclick="mashiro_global.font_control.change_font()">Serif</button>
+        <button type="button" class="control-btn-sans-serif" data-mode="sans-serif" 
+                onclick="mashiro_global.font_control.change_font()">Sans Serif</button>
+    </div>
+</div>
+<canvas id="night-mode-cover"></canvas>
+<div id="aplayer-float" style="z-index: 100;"
+	class="aplayer"
+    data-id="151902279"
+    data-server="netease"
+    data-type="playlist"
+    data-fixed="true"
+    data-theme="orange">
+</div>
+<style>.skin-menu{left:auto;right:10px;}.changeSkin-gear{left:auto;right:5px;}</style>
 </body>
 
-<ul>
-  <h4> <a href="https://space.bilibili.com/437772906?spm_id_from=333.1007.0.0" target="_blank">DZT的B站账号</a> </h4>
-  <h4> <a href="https://www.bilibili.com/video/BV1Va41147hK?spm_id_from=333.999.0.0" target="_blank">我的新活，支持一下啦</a> </h4>
-</ul>
-<!-- 文字 -->
+<script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+<script>
+    L2Dwidget.init({
+        "model": {
+/*
+黑猫：https://unpkg.com/live2d-widget-model-hijiki@1.0.5/assets/hijiki.model.json
+萌娘：https://unpkg.com/live2d-widget-model-shizuku@1.0.5/assets/shizuku.model.json
+白猫：https://unpkg.com/live2d-widget-model-tororo@1.0.5/assets/tororo.model.json
+狗狗：https://unpkg.com/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json
+小可爱：https://unpkg.com/live2d-widget-model-z16@1.0.5/assets/z16.model.json
+小可爱：https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json
+*/
+　　　　　　　//jsonpath控制显示那个小萝莉模型，
+			//(切换模型需要改动)
+//				"https://unpkg.com/(live2d-widget-model-koharu)@1.0.5/assets/(koharu).model.json"
+            jsonPath: "https://unpkg.com/live2d-widget-model-shizuku@1.0.5/assets/shizuku.model.json",
+            "scale": 1
+        },
+        "display": {
+            "position": "right", //看板娘的表现位置
+            "width": 60,  //宽度
+            "height": 110, //高度
+            "hOffset": -30,
+            "vOffset": -50
+        },
+        "mobile": {
+            "show": true,
+            "scale": 0.5
+        },
+        "react": {
+            "opacityDefault": 0.7,
+            "opacityOnHover": 0.2
+        }
+    });
+</script>
 
-
-<!-- 各类代码开始 -->
 <div>
 <br>
 <span id="sitetime"></span>
@@ -129,77 +415,4 @@ h4 {text-align:center}
   </div>
    </div>
 </div>
-
-<!-- 显示FPS开始 -->
-<script>
-//if ((!navigator.userAgent.match(/(iPhone|iPod|Android|ios|iPad)/i))) {//匹配手机，把注释去掉就只显示PC端
-    $('body').before('<div id="fps" style="color:#7FFFD4;z-index:10000;position:fixed;top:2px;left:2px;font-weight:bold;"></div>');
-    var showFPS = (function() {
-        var requestAnimationFrame = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame || function(callback) {
-            window.setTimeout(callback, 1000 / 60);
-        }
-        ;
-        var e, pe, pid, fps, last, offset, step, appendFps;
-        fps = 0;
-        last = Date.now();
-        step = function() {
-            offset = Date.now() - last;
-            fps += 1;
-            if (offset >= 1000) {
-                last += offset;
-                appendFps(fps);
-                fps = 0;
-            }
-            requestAnimationFrame(step);
-        }
-        ;
-        appendFps = function(fps) {
-            $('#fps').html(fps + 'FPS');
-        }
-        ;
-        step();
-    }
-    )();
-//}//手机和电脑开启
-</script>
-<!-- 显示FPS结束 -->
-
-
-
-<!-- 猫咪开始 -->
-<script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
-<script>
-    L2Dwidget.init({
-        "model": {
-/*
-黑猫：https://unpkg.com/live2d-widget-model-hijiki@1.0.5/assets/hijiki.model.json
-萌娘：https://unpkg.com/live2d-widget-model-shizuku@1.0.5/assets/shizuku.model.json
-白猫：https://unpkg.com/live2d-widget-model-tororo@1.0.5/assets/tororo.model.json
-狗狗：https://unpkg.com/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json
-小可爱：https://unpkg.com/live2d-widget-model-z16@1.0.5/assets/z16.model.json
-小可爱：https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json
-*/
-　　　　　　　//jsonpath控制显示那个小萝莉模型，
-			//(切换模型需要改动)
-//				"https://unpkg.com/(live2d-widget-model-koharu)@1.0.5/assets/(koharu).model.json"
-            jsonPath: "https://unpkg.com/live2d-widget-model-shizuku@1.0.5/assets/shizuku.model.json",
-            "scale": 1
-        },
-        "display": {
-            "position": "right", //看板娘的表现位置
-            "width": 60,  //宽度
-            "height": 110, //高度
-            "hOffset": -30,
-            "vOffset": -50
-        },
-        "mobile": {
-            "show": true,
-            "scale": 0.5
-        },
-        "react": {
-            "opacityDefault": 0.7,
-            "opacityOnHover": 0.2
-        }
-    });
-</script>
-<!-- 猫咪结束 -->
+</html>
