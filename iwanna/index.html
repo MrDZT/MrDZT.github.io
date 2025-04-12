@@ -30,27 +30,25 @@
 }
 
 .margin1 {
-    margin-top: 0; /* 移除原来的 margin-top */
-    margin-bottom: 20px; /* 添加标题与信封之间的间距 */
+    margin-top: 0;
+    margin-bottom: 20px; 
 }
-body 
+.bd
 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
     height: 100vh;
     margin: 0;
-    background-color: #f3f3f3;
+    background-color: #cbebff;
 
 }
 
 .envelope 
 {
     position: relative;
-    width: 200px;
-    height: 150px;
-    background: #fff;
-    border: 2px solid #ccc;
+    width: 500px;
+    height: 300px;
+    background: #f6f6f6;
+    border: 2px solid hwb(0 66% 34%);
     border-radius: 5px;
     overflow: hidden;
     cursor: pointer;
@@ -67,8 +65,8 @@ body
     top: 0;
     left: 0;
     width: 100%;
-    height: 50%;
-    background: #ccc;
+    height: 100%;
+    background: #98f1ff;
     transform-origin: top;
     transition: transform 0.5s ease;
  }
@@ -92,17 +90,36 @@ body
 .envelope.open .message {
     opacity: 1;
 }
+.miffy
+{
+    background-image:url('https://bbs.api.hoilai.com/upload/img/2025/4/12/a80949cc-f4cb-4720-a043-fa62c20b30a1.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+.mcenter
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 </style>
-<body>
+<body class="bd">
 
+    <h1 class="font center margin1 " style="margin-top: 20px;">故事就像电影的结尾</h1>
 
-<div class="container">
-    <h1 class="font center margin1">故事就像电影的结尾</h1>
-    <div class="envelope" onclick="toggleEnvelope(this)">
-        <div class="flap"></div>
+<div class="container mcenter">
+    <div class="envelope bd " style="margin-top: 50px;" onclick="toggleEnvelope(this)">
+        <div class="flap miffy"></div>
         <div class="message">祝你天天开心</div>
     </div>
     <p class="center margin" style="font-size: 25px;margin-top: 20px;">Hello</p>
+    
+    
+</div>
+<div>
+    <img src="https://bbs.api.hoilai.com/upload/img/2025/4/12/5836e82b-53a7-40a5-84a1-fc40ecd20534.png" style="height: 150px;position: fixed;bottom: 0;left: 0;margin: 10px;">
 </div>
 
     <script>
@@ -110,5 +127,11 @@ body
             element.classList.toggle('open');
         }
     </script>
+
 </body>
+
+<body>
+    
+</body>
+
 
