@@ -1,3 +1,8 @@
+<!-- 
+    123123123
+    不知道写什么，有很多话想说
+    哈哈哈哈喜欢你（虽然写在这里你看不见）
+-->
 <!DOCTYPE html>
 <html>
 <link rel="shortcut icon" href="https://bbs.api.hoilai.com/upload/img/2025/4/12/1628bbab-27ac-4539-95ad-0dfd04f1d32a.jpg">
@@ -38,8 +43,17 @@
     
     height: 100vh;
     margin: 0;
-    background-color: #cbebff;
+    background-color: #e7f6ff;
 
+}
+.bgc
+{   
+    margin:0;
+    height: 100vh;
+    background-image:url('https://bbs.api.hoilai.com/upload/img/2025/4/13/28d2466e-6566-4d5d-bf0a-ab8e1751d75c.png');
+	background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center;
 }
 
 .envelope 
@@ -66,7 +80,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: #98f1ff;
+    background: #ffffff;
     transform-origin: top;
     transition: transform 0.5s ease;
  }
@@ -81,7 +95,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         font-family: Arial, sans-serif;
-        font-size: 16px;
+        font-size: 20px;
         text-align: center;
         opacity: 0;
         transition: opacity 0.5s ease;
@@ -105,20 +119,24 @@
     transform: translate(-50%, -50%);
 }
 </style>
+<body class="bgc">
+    
+
 <h1 class="font center margin1 " style="top: 50%;">故事就像电影的结尾</h1>
-<body class="bd">
+<body class="bgc">
 
 
 <div class="container mcenter">
     <div class="envelope bd " style="margin-top: 50px;" onclick="toggleEnvelope(this)">
         <div class="flap miffy"></div>
-        <div class="message">祝你天天开心</div>
+        <div class="message font">Teddy<br>祝你<br>生日快乐<br>天天开心!</div>
     </div>
     
     
 </div>
 <div>
     <img src="https://bbs.api.hoilai.com/upload/img/2025/4/12/5836e82b-53a7-40a5-84a1-fc40ecd20534.png" style="height: 150px;position: fixed;bottom: 0;left: 0;margin: 10px;">
+    <img src="https://bbs.api.hoilai.com/upload/img/2025/4/13/2cae13df-f8be-4323-91d9-e51d43ce7662.png" style="height: 150px;position: fixed;bottom: 0;right: 0;margin: 1px;">
 </div>
 
     <script>
@@ -129,18 +147,19 @@
 
 </body>
 
+
 <span id="sitetime"></span>
-<div align="center" style="border: 1px solid #000000; font-size: 16px; line-height: 1.5; margin: 5px; border-radius: 0.5em;padding: 5px;">
+<div align="center" style="font-size: 25px; line-height: 1.5; margin: 5px; border-radius: 0.5em;padding: 5px;">
 <script language = "JavaScript"type = "text/javascript" >
-    //添加网站的上线时间
     var urodz = new Date("04/22/2025 00:00:00");
-    var birth = new Date("04/22/2007 00:00:00");
+    var birth = new Date("04/22/2008 00:00:00");
     var now = new Date();
     var ile = now.getTime() - urodz.getTime();
     var sui = now.getTime() - birth.getTime();
+    var day = now.getTime() - birth.getTime();
     var age1 = Math.floor(sui / (1000 * 60 * 60 * 24 * 365.25));
-    var dni = Math.floor(ile / (-1000 * 60 * 60 * 24));
-    document.write("距离"+age1+"岁生日还有"+dni+"天");
+    var dni = Math.floor(sui / (1000 * 60 * 60 * 24));
+    document.write("你现在"+age1+"岁，已经来这世界上"+dni+"天啦");
 </script>
 <br>
 
@@ -154,23 +173,23 @@
     if (nge_Hour == 1)
     nge_warmprompt = "凌晨1点多了，工作是永远都做不完的，小伙伴别熬坏身子！"
     if (nge_Hour == 2)
-    nge_warmprompt = "亲爱的小伙伴该休息了，身体可是革命的本钱啊！"
+    nge_warmprompt = "该休息了，身体可是革命的本钱啊！"
     if (nge_Hour == 3)
     nge_warmprompt = "夜深了，熬夜很容易导致身体内分泌失调，长痘痘的！"
     if (nge_Hour == 4)
-    nge_warmprompt = "四点过了额(⊙o⊙)…，你明天不学习工作吗？？？"
+    nge_warmprompt = "四点过了额(⊙o⊙)…，你明天不学习吗？？？"
     if (nge_Hour == 5)
     nge_warmprompt = "你知道吗，此时是国内网络速度最快的时候！"
     if (nge_Hour == 6)
-    nge_warmprompt = "清晨好，这么早就来网站啦，谢谢小伙伴的关注哦，昨晚做的梦好吗？ "
+    nge_warmprompt = "清晨好，这么早就来网站啦，谢谢你的关注哦，昨晚做的梦好吗？ "
     if (nge_Hour == 7)
     nge_warmprompt = "新的一天又开始了，祝你过得快乐! "
     if (nge_Hour == 8)
-    nge_warmprompt = "小伙伴早上好哦，一天之际在于晨，又是美好的一天！"
+    nge_warmprompt = "早上好哦，一天之际在于晨，又是美好的一天！"
     if ((nge_Hour == 9) || (nge_Hour ==10))
     nge_warmprompt = "上午好！今天你看上去好精神哦！"
     if (( nge_Hour == 11) || (nge_Hour == 12))
-    nge_warmprompt = "小伙伴啊！该吃午饭啦！有什么好吃的？您有中午休息的好习惯吗？"
+    nge_warmprompt = "该吃午饭啦！有什么好吃的？您有中午休息的好习惯吗？"
     if (( nge_Hour >= 13) && (nge_Hour <= 17))
     nge_warmprompt = "下午好！外面的天气好吗？记得朵朵白云曾捎来朋友殷殷的祝福。"
     if (( nge_Hour >= 17) && (nge_Hour <= 18))
@@ -180,10 +199,10 @@
     if (( nge_Hour >= 19) && (nge_Hour <= 21))
     nge_warmprompt = "忙碌了一天，累了吧？去看看最新的新闻资讯醒醒脑吧！"
     if (( nge_Hour >= 22) && (nge_Hour <= 23))
-    nge_warmprompt = "这么晚了，小伙伴还在上网？早点洗洗睡吧，睡前记得洗洗脸喔！明天一天都会萌萌哒！"
+    nge_warmprompt = "这么晚了，还在上网？早点洗洗睡吧，睡前记得洗洗脸喔！明天一天都会萌萌哒！"
     document.write("<div><i class='fa fa-beer'></i> ")
     document.write(nge_warmprompt)
     document.write("</div>")
     </script>
 </div>
-
+</body>
